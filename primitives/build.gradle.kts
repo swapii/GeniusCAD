@@ -14,9 +14,8 @@ dependencies {
     api(kotlin("stdlib-jdk8"))
 
     testImplementation("org.spekframework.spek2:spek-dsl-jvm:2.0.10")
-    testImplementation("com.winterbe:expekt:0.5.0")
     testRuntimeOnly("org.spekframework.spek2:spek-runner-junit5:2.0.10")
 
-    testRuntimeOnly("org.jetbrains.kotlin:kotlin-reflect:1.3.72")
+    testImplementation("ch.tutteli.atrium:atrium-fluent-en_GB:0.12.0")
 
 }
