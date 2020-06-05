@@ -1,4 +1,4 @@
-package geniuscad.twod.primitive
+package geniuscad.twod.shape.circle
 
 import ch.tutteli.atrium.api.fluent.en_GB.isEmpty
 import ch.tutteli.atrium.api.fluent.en_GB.isGreaterThanOrEqual
@@ -7,7 +7,9 @@ import ch.tutteli.atrium.api.fluent.en_GB.size
 import ch.tutteli.atrium.api.fluent.en_GB.toBeWithErrorTolerance
 import ch.tutteli.atrium.api.fluent.en_GB.toThrow
 import ch.tutteli.atrium.api.verbs.expect
-import geniuscad.twod.shape.circle.createCircle
+import geniuscad.twod.primitive.Point
+import geniuscad.twod.primitive.distanceTo
+import geniuscad.twod.primitive.getAllPoints
 import org.spekframework.spek2.Spek
 import org.spekframework.spek2.style.specification.describe
 
