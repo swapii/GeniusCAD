@@ -1,5 +1,9 @@
-package geniuscad.twod.primitive
+package geniuscad.twod.shape.circle
 
+import geniuscad.twod.primitive.Curve
+import geniuscad.twod.primitive.LineSegment
+import geniuscad.twod.primitive.Point
+import geniuscad.twod.primitive.moveTo
 import kotlin.math.nextUp
 import kotlin.math.roundToInt
 
@@ -16,10 +20,10 @@ fun createCircle(radius: Double, minimumAngleBetweenNeighbourSegments: Double = 
     return (0 until segmentsCount)
         .map { segmentIndex ->
             LineSegment(
-                Point(0.0, 0.0)
-                    .moveTo(segmentIndex * circleSegmentAngle, radius),
-                Point(0.0, 0.0)
-                    .moveTo((segmentIndex + 1) * circleSegmentAngle, radius)
+                    Point(0.0, 0.0)
+                            .moveTo(segmentIndex * circleSegmentAngle, radius),
+                    Point(0.0, 0.0)
+                            .moveTo((segmentIndex + 1) * circleSegmentAngle, radius)
             )
         }
 }

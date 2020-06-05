@@ -7,6 +7,7 @@ import ch.tutteli.atrium.api.fluent.en_GB.size
 import ch.tutteli.atrium.api.fluent.en_GB.toBeWithErrorTolerance
 import ch.tutteli.atrium.api.fluent.en_GB.toThrow
 import ch.tutteli.atrium.api.verbs.expect
+import geniuscad.twod.shape.circle.createCircle
 import org.spekframework.spek2.Spek
 import org.spekframework.spek2.style.specification.describe
 
@@ -28,8 +29,8 @@ object Circle : Spek({
 
         it("with rude approximation should have at least three segments because its triangle") {
             val circle = createCircle(
-                radius = 1.0,
-                minimumAngleBetweenNeighbourSegments = 59.0
+                    radius = 1.0,
+                    minimumAngleBetweenNeighbourSegments = 59.0
             )
             expect(circle).size.isSameAs(3)
         }
