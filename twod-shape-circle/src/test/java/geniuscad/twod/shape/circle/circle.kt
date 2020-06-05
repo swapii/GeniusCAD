@@ -7,9 +7,9 @@ import ch.tutteli.atrium.api.fluent.en_GB.size
 import ch.tutteli.atrium.api.fluent.en_GB.toBeWithErrorTolerance
 import ch.tutteli.atrium.api.fluent.en_GB.toThrow
 import ch.tutteli.atrium.api.verbs.expect
-import geniuscad.twod.primitive.Point
-import geniuscad.twod.primitive.distanceTo
-import geniuscad.twod.primitive.getAllPoints
+import geniuscad.twod.primitive.point.Point
+import geniuscad.twod.primitive.point.distanceTo
+import geniuscad.twod.primitive.curve.getAllPoints
 import org.spekframework.spek2.Spek
 import org.spekframework.spek2.style.specification.describe
 
@@ -19,7 +19,7 @@ object Circle : Spek({
 
         describe("with zero radius") {
             it("should return no segments") {
-                expect(createCircle(radius = 0.0)).isEmpty()
+                expect(createCircle(radius = 0.0).segments).isEmpty()
             }
         }
 
@@ -34,7 +34,7 @@ object Circle : Spek({
                     radius = 1.0,
                     minimumAngleBetweenNeighbourSegments = 59.0
             )
-            expect(circle).size.isSameAs(3)
+            expect(circle.segments).size.isSameAs(3)
         }
 
         it("should have segment points with distance from center equals radius") {
@@ -49,7 +49,7 @@ object Circle : Spek({
         describe("with regular radius and default approximation") {
             it("should have at least three segments") {
                 val circle = createCircle(radius = 1.0)
-                expect(circle).size.isGreaterThanOrEqual(3)
+                expect(circle.segments).size.isGreaterThanOrEqual(3)
             }
         }
 

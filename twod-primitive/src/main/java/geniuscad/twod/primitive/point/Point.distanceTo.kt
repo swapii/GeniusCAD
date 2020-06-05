@@ -1,5 +1,6 @@
-package geniuscad.twod.primitive
+package geniuscad.twod.primitive.point
 
+import geniuscad.twod.primitive.point.Point
 import kotlin.math.abs
 import kotlin.math.hypot
 

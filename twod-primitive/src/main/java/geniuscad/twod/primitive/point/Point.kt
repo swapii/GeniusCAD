@@ -1,4 +1,4 @@
-package geniuscad.twod.primitive
+package geniuscad.twod.primitive.point
 
 data class Point(
     val x: Double,
