@@ -1,12 +1,13 @@
 package geniuscad.twod.primitive.polygon
 
+import geniuscad.twod.primitive.face.Face
 import sun.awt.geom.Curve
 
 /**
  * Polygon is a closed curve with optional holes.
  */
 data class Polygon private constructor(
-    val curve: Curve,
+    val face: Face,
     val holes: List<Polygon>
 ) {
 
