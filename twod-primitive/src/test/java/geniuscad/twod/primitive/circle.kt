@@ -1,4 +1,4 @@
-package geniuscad.primitive.dimension2
+package geniuscad.twod.primitive
 
 import ch.tutteli.atrium.api.fluent.en_GB.isEmpty
 import ch.tutteli.atrium.api.fluent.en_GB.isGreaterThanOrEqual

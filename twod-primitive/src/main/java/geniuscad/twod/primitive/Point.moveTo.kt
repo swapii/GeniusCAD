@@ -1,4 +1,4 @@
-package geniuscad.primitive.dimension2
+package geniuscad.twod.primitive
 
 import kotlin.math.cos
 import kotlin.math.sin

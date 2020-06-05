@@ -1,4 +1,4 @@
-package geniuscad.primitive.dimension2
+package geniuscad.twod.primitive
 
 fun Curve.getAllPoints(): List<Point> =
     this.flatMap { listOf(it.a, it.b) }
