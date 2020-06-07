@@ -13,6 +13,8 @@ dependencies {
 
     api(kotlin("stdlib-jdk8"))
 
+    implementation(project(":common"))
+
     testImplementation("org.spekframework.spek2:spek-dsl-jvm:2.0.10")
     testRuntimeOnly("org.spekframework.spek2:spek-runner-junit5:2.0.10")
 
