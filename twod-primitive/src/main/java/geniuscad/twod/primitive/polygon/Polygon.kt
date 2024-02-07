@@ -1,7 +1,7 @@
 package geniuscad.twod.primitive.polygon
 
+import geniuscad.twod.primitive.curve.Curve
 import geniuscad.twod.primitive.face.Face
-import sun.awt.geom.Curve
 
 /**
  * Polygon is a closed curve with optional holes.
