@@ -1,10 +1,4 @@
 plugins {
     `java-library`
-    kotlin("jvm")
-}
-
-dependencies {
-
-    api(kotlin("stdlib-jdk8"))
-
+    alias(libs.plugins.kotlin.jvm)
 }
